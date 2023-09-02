@@ -1,20 +1,8 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+#include<stdlib.h>
 
 
+char randchar(){
 
-int main()
-{
-	int a;
+	return (rand() % 26)+65;
 
-	/* seed the randomizer */
-	srand( (unsigned)time(NULL) );
-
-	printf("Today's random word: ");
-	for(a=0;a<7;a++)
-		putchar( randchar() );
-	putchar('\n');
-
-	return(0);
 }
